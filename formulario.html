@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>CADASTRO DE PROGRAMADORES</h1>
+
+    <form>
+        <fieldset>
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome:</label><br>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="area">Em qual área atua:</label><br>
+            <input type="radio" name="area" id="front"> <label for="front">Front - End</label>
+            <input type="radio" name="area" id="back"> <label for="back">Back - End</label>
+            <input type="radio" name="area" id="full"> <label for="full">Full Stack</label>
+        </div>
+
+        <div>
+            <label for="nivel">Seu nível: </label><br>
+            <select name="nivel" id="nivel">
+                <option value="">-- Selecione --</option>
+                <option value="">Novato</option>
+                <option value="">Junior</option>
+                <option value="">Intermédiario</option>
+                <option value="">Avançado</option>
+                <option value="">Professor</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tecnologia">Quais as tecnologias que utiliza: </label><br>
+            <input type="checkbox" name="tecnologia" id="tecnologia"> HTML
+            <input type="checkbox" name="tecnologia" id="tecnologia"> CSS
+            <input type="checkbox" name="tecnologia" id="tecnologia"> JAVASCRIPT
+            <input type="checkbox" name="tecnologia" id="tecnologia"> PHP
+        </div>
+
+        <div>
+            <label for="msg">Escreva um pouco da sua experiência</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+
+    </form>
+</body>
+</html>
