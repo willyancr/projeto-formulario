@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(Fontes/Roboto-Regular.ttf) format("truetype"),
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(Fontes/Roboto-Bold.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #36384D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-cadastro{
+    
+    background-color: rgb(255, 255, 255);
+}
