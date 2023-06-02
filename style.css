@@ -72,6 +72,9 @@ input, select, textarea, button{
 .botao:hover{
     background: #f33c12;
 }
+.botao, select, input[type="checkbox"], input[type="radio"] {
+    cursor: pointer;
+}
 #img{
     background-color: rgb(255, 255, 255);
     display: flex;
