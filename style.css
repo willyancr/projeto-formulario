@@ -33,6 +33,8 @@
     font-family: "RobotoBold";
     margin-bottom: 1.5em;
     text-align: center;
+    color: #FF6645;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
 }
 fieldset{
     border: 0;
@@ -47,9 +49,28 @@ input, select, textarea, button{
     float: left;
     margin-right: 1em;
 }
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
 .campo input[type="radio"], .campo input[type="checkbox"]{
     margin-left: 1em;
     margin-right: 1em;
+    margin-top: 1em;
+}
+.campo select, .campo textarea{
+    margin-top: 0.5em;
+}
+.botao{
+    font-size: 1.2em;
+    padding: 0.3em;
+    border: 0;
+    background: #FF6645;
+    color: aliceblue;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+.botao:hover{
+    background: #f33c12;
 }
 #img{
     background-color: rgb(255, 255, 255);
