@@ -31,7 +31,8 @@
 }
 #form-titulo{
     font-family: "RobotoBold";
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    text-align: center;
 }
 fieldset{
     border: 0;
@@ -44,6 +45,10 @@ input, select, textarea, button{
 }
 .form-grupo .campo{
     float: left;
+    margin-right: 1em;
+}
+.campo input[type="radio"], .campo input[type="checkbox"]{
+    margin-left: 1em;
     margin-right: 1em;
 }
 #img{
