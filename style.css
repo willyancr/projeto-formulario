@@ -83,7 +83,7 @@ input, select, textarea, button{
 .botao, select, input[type="checkbox"], input[type="radio"] { 
     cursor: pointer;
 }
-#img{
+.img{
     background-color: rgb(255, 255, 255);
     width: 25vw;
     display: flex;
@@ -91,17 +91,31 @@ input, select, textarea, button{
     padding: 30px 40px;
     border-radius: 0px 30px 30px 0px;
 }
-.imagem{
+#imgdesk{
+    width: 27vw;
+}
+#imgmob{
+    display: none;
     width: 27vw;
 }
 @media only screen and (max-width: 600px) {
     #container{
         flex-direction: column;
     }
+    #imgmob{
+        display: contents;
+    }
+    #imgdesk{
+        display: none;
+    }
     #form-cadastro{
         width: 60%;
         height: auto;
         border-radius: 30px;
-        
+        margin-top: 30px;
     }
+    .img{
+        display: contents;
+    }
+    
 }
