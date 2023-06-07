@@ -98,7 +98,7 @@ input, select, textarea, button{
     display: none;
     width: 27vw;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     #container{
         flex-direction: column;
         height: 100%;
