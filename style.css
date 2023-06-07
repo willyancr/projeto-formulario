@@ -53,11 +53,11 @@ input, select, textarea, button{
     
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
-.campo input[type="radio"], .campo input[type="checkbox"]{
-    margin-left: 1em;
-    margin-right: 1em;
+.campo input[type="radio"], .campo input[type="checkbox"], label{
+    padding-right: 0.5em;
     margin-top: 1em;
 }
+
 .campo select, .campo textarea{
     margin-top: 0.5em;
     padding: 0.3em;
@@ -101,21 +101,32 @@ input, select, textarea, button{
 @media only screen and (max-width: 600px) {
     #container{
         flex-direction: column;
+        height: 100%;
     }
-    #imgmob{
-        display: contents;
+    #form-titulo{
+        font-size: 3.5vw;
     }
-    #imgdesk{
-        display: none;
+    .campo{
+        font-size: 3vw;
     }
     #form-cadastro{
-        width: 60%;
+        width: 69%;
         height: auto;
-        border-radius: 30px;
-        margin-top: 30px;
+        border-radius: 10px 10px 30px 30px;
+    }
+    .campo select{
+        width: 165.6px;
+    }
+    .campo textarea{
+        width: 66vw;
+    }
+    #imgmob{
+        display: block;
+        width: 83%;
+        border-radius: 0px;
     }
     .img{
-        display: contents;
+        display: none;
     }
     
 }
