@@ -21,11 +21,7 @@
 }
 #form-cadastro{
     background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    width: 27vw;
-    height: 73%;
-    padding: 30px 40px;
+    padding: 20px;
     border-radius: 30px 0px 0px 30px;
     
 }
@@ -53,7 +49,7 @@ input, select, textarea, button{
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
-    
+    font-size: 1vw;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 .campo input[type="radio"], .campo input[type="checkbox"], label{
@@ -86,16 +82,9 @@ input, select, textarea, button{
 .botao, select, input[type="checkbox"], input[type="radio"] { 
     cursor: pointer;
 }
-.img{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    width: 25vw;
-    height: 73%;
-    padding: 30px 40px;
-    border-radius: 0px 30px 30px 0px;
-}
 #imgdesk{
-    width: 27vw;
+    border-radius: 0px 30px 30px 0px;
+    
 }
 #imgmob{
     display: none;
