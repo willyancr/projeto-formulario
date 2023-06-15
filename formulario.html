@@ -5,64 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/celular.css">
+    <link rel="stylesheet" href="Estilos/tablet.css">
 </head>
 <body>
-    <main id="container">
-        <img src="Imagens/illustration-sign-up-mobile.svg" id="imgmob" alt="Imagem Mobile">       
+    <main>
+
         <form id="form-cadastro">
-            <div id="form-titulo">
-                <h1>CADASTRO DE DEV´S</h1>
-            </div>
-            <fieldset class="form-grupo">
-                <div class="campo">
-                    <label for="nome"><strong>Nome:</strong></label><br>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-                <div class="campo">
-                    <label for="sobrenome"><strong>Sobrenome:</strong></label><br>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
-                </div>
-            </fieldset>
-            <div class="campo">
-                <label for="email"><strong>E-mail:</strong></label><br>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="campo">
-                <label for="area"><strong>Em qual área atua:</strong></label><br>
-                <input type="radio" name="area" id="front"> <label for="front">Front - End</label>
-                <input type="radio" name="area" id="back"> <label for="back">Back - End</label>
-                <input type="radio" name="area" id="full"> <label for="full">Full Stack</label>
-            </div>
-            <div class="campo">
-                <label for="nivel"><strong>Seu nível:</strong> </label><br>
-                <select name="nivel" id="nivel">
-                    <option value="">-- Selecione --</option>
-                    <option value="">Novato</option>
-                    <option value="">Junior</option>
-                    <option value="">Intermédiario</option>
-                    <option value="">Avançado</option>
-                    <option value="">Professor</option>
-                </select>
-            </div>
-            <div class="campo">
-                <label for="tecnologia"><strong>Quais as tecnologias que utiliza:</strong></label><br>
-                <input type="checkbox" name="tecnologia" id="html"> <label for="html">HTML</label>
-                <input type="checkbox" name="tecnologia" id="css"> <label for="css">CSS</label>
-                <input type="checkbox" name="tecnologia" id="javas"> <label for="javas">JAVASCRIPT</label>
-                <input type="checkbox" name="tecnologia" id="php"> <label for="php">PHP</label>
-            </div>
-            <div class="campo">
-                <label for="msg"><strong>Escreva um pouco da sua experiência:</strong></label><br>
-                <textarea name="msg" id="msg" cols="50" rows="5"></textarea>
-            </div>
-            <button class="botao" type="submit">Enviar</button>
             
+            <div id="img"></div>
+             
+            <section id="geral">
+                <div id="form-titulo">
+                    <h1>CADASTRO DE DEV´S</h1>
+                </div>
+                <fieldset class="form-grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome:</strong></label><br>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome:</strong></label><br>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label for="email"><strong>E-mail:</strong></label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for="area"><strong>Em qual área atua:</strong></label><br>
+                    <input type="radio" name="area" id="front"> <label class="fonte" for="front">Front - End</label>
+                    <input type="radio" name="area" id="back"> <label class="fonte" for="back">Back - End</label>
+                    <input type="radio" name="area" id="full"> <label class="fonte" for="full">Full Stack</label>
+                </div>
+                <div class="campo">
+                    <label for="nivel"><strong>Seu nível:</strong> </label><br>
+                    <select name="nivel" id="nivel">
+                        <option value="">-- Selecione --</option>
+                        <option value="">Novato</option>
+                        <option value="">Junior</option>
+                        <option value="">Intermédiario</option>
+                        <option value="">Avançado</option>
+                        <option value="">Professor</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="tecnologia"><strong>Quais as tecnologias que utiliza:</strong></label><br>
+                    <input type="checkbox" name="tecnologia" id="html"> <label class="fonte" for="html">HTML</label>
+                    <input type="checkbox" name="tecnologia" id="css"> <label class="fonte" for="css">CSS</label>
+                    <input type="checkbox" name="tecnologia" id="javas"> <label class="fonte" for="javas">JAVASCRIPT</label>
+                    <input type="checkbox" name="tecnologia" id="php"> <label class="fonte" for="php">PHP</label>
+                </div>
+                <div class="campo">
+                    <label for="msg"><strong>Escreva um pouco da sua experiência:</strong></label><br>
+                    <textarea name="msg" id="msg" cols="50" rows="5"></textarea>
+                </div>
+                <button class="botao" type="submit">Enviar</button>
+                
+            
+            </section>
         </form>
-        
-            <img src="Imagens/desktop.png" id="imgdesk" alt="Imagen Desktop">
-            
-       
+     
     </main>
 </body>
 </html>

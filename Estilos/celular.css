@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(../Fontes/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../Fontes/Roboto-Bold.ttf) format("truetype");
+}
+@media screen and (max-width: 768px) {
+    main{
+        height: auto;
+    }
+    #form-cadastro{
+        width: 81%;
+        border-radius:10px;
+        padding: 0;
+        overflow: hidden;
+        margin: 10px 0px 10px 0px;
+        
+    }
+    #form-cadastro #img{
+        display: block;
+        background: url(../Imagens/mobile.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    
+    #form-titulo{
+        font-size: 5vw;
+        
+    }
+    .campo{
+        font-size: 4vw;
+                
+    }
+    .campo input[type="text"], .campo input[type="email"]{
+        font-size: 4vw;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        width: 90%;
+        height: 20px;
+        padding: 5px;
+    }
+    .campo select{
+        font-size: 3vw;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        height: 35px;
+        padding: 5px;
+        width: 200px;
+    }
+    .campo textarea{
+        width: 90%;
+        height: 20vh;
+    }
+    .fonte{
+        font-size: 3.7vw;
+    }
+    
+    
+}

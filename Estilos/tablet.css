@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(../Fontes/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../Fontes/Roboto-Bold.ttf) format("truetype");
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    
+    #form-cadastro{
+        width: 90vw;
+        height: 90vh;
+    }
+    #form-cadastro #img {
+        background: url(../Imagens/desktop.png) no-repeat;
+        background-size: cover;
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    #geral{
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+    #form-titulo{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .campo{
+        font-size: 1rem;
+    }
+    .campo input[type="text"], .campo input[type="email"]{
+        font-size: 1rem;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        width: 100%;
+        height: 15px;
+        padding: 5px;
+    }
+    .campo select{
+        font-size: 1rem;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        height: 30px;
+        padding: 5px;
+        width: 100%;
+    }
+    .campo textarea{
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 0px;
+    }
+    .fonte{
+        font-size: 0.8rem;
+    }
+}

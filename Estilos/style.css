@@ -1,16 +1,16 @@
 @font-face {
     font-family: "RobotoRegular";
-    src: url(Fontes/Roboto-Regular.ttf) format("truetype");
+    src: url(../Fontes/Roboto-Regular.ttf) format("truetype");
 }
 @font-face {
     font-family: "RobotoBold";
-    src: url(Fontes/Roboto-Bold.ttf) format("truetype");
+    src: url(../Fontes/Roboto-Bold.ttf) format("truetype");
 }
 *{
     margin: 0;
     padding: 0;
 }
-#container{
+main{
     width: 100vw;
     height: 100vh;
     background-color: #201b2c;
@@ -20,18 +20,32 @@
     font-family: "RobotoRegular";
 }
 #form-cadastro{
+    display: block;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+#form-cadastro #img{
+    display: block;
+    background: url(../Imagens/desktop.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
     
 }
 #form-titulo{
     font-family: "RobotoBold";
     font-size: 1vw;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     text-align: center;
     color: #FF6645;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
+#geral{
+    display: block;
+    padding: 15px;
 }
 fieldset{ border: 0;}
 
@@ -45,7 +59,8 @@ input, select, textarea, button{
 
 .form-grupo .campo{ 
     float: left;
-    margin-right: 1em;
+    margin-right: 1.7rem;
+    
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
@@ -75,6 +90,7 @@ input, select, textarea, button{
     text-transform: uppercase;
     font-weight: 550;
     letter-spacing: 2px;
+    
 }
 .botao:hover{
     background: #f33c12;
@@ -84,40 +100,65 @@ input, select, textarea, button{
 }
 #imgdesk{
     border-radius: 0px 30px 30px 0px;
-    
+    width: auto;
+    height: auto;
 }
 #imgmob{
     display: none;
-    width: 27vw;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #container{
-        flex-direction: column;
-        height: 100%;
-    }
-    #form-titulo{
-        font-size: 3.5vw;
-    }
-    .campo{
-        font-size: 3vw;
+        height: auto;
     }
     #form-cadastro{
-        width: 69%;
-        height: auto;
-        border-radius: 10px 10px 30px 30px;
+        width: 81%;
+        border-radius:10px;
+        padding: 0;
+        overflow: hidden;
+        margin: 10px 0px 10px 0px;
+        
+    }
+    #form-cadastro #imgmob{
+        display: block;
+        background: url(Imagens/mobile.png) no-repeat;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #geral{
+        padding: 15px;
+    }
+    
+    #form-titulo{
+        font-size: 5vw;
+        
+    }
+    .campo{
+        font-size: 4vw;
+                
+    }
+    .campo input[type="text"], .campo input[type="email"]{
+        font-size: 4vw;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        width: 300px;
+        height: 20px;
+        padding: 5px;
     }
     .campo select{
-        width: 165.6px;
+        font-size: 3vw;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+        height: 35px;
+        padding: 5px;
+        width: 200px;
     }
     .campo textarea{
-        width: 66vw;
+        width: 100%;
+        height: 20vh;
     }
-    #imgmob{
-        display: block;
-        width: 83%;
-        border-radius: 0px;
+    .fonte{
+        font-size: 3.7vw;
     }
-    .img{
+    #imgdesk{
         display: none;
     }
     
